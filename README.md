@@ -1,3 +1,5 @@
+English | [Türkçe](./README.tr.md)
+
 # FUP (Find Unused Pictures)
 
 FUP is a command-line tool designed to help developers identify and manage unused images in their project directories. This tool scans through your project files and detects images that are not referenced in your codebase, potentially helping to reduce clutter and optimize project size.
@@ -19,14 +21,14 @@ FUP is a command-line tool designed to help developers identify and manage unuse
 
 4. **Results**: FUP reports the total number of images found and lists any images that are not referenced in the code.
 
-## Usage
-npx fup
-npx fup [directory]
 
 Example
-
 ```bash
-npx fup
-npx fup public
+npx handbuz-fup
+npx handbuz-fup public
 ```
+
+
+
+
 
