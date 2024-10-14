@@ -42,5 +42,5 @@ if(unusedImages.length > 0){
         console.log(`\x1b[33m${index + 1}. ${image}\x1b[0m`);
     });
 }else{
-    console.log("\x1b[31mNo unused images found.\x1b[0m");
+    console.log("\x1b[33mGreat job! No unused images found. Your project is optimized! 🎉\x1b[0m");
 }

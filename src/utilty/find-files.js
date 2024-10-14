@@ -10,7 +10,7 @@ export const findFiles = (directory) => {
   };
 
   if (!fs.existsSync(directory)) {
-    console.error(`Error: Directory '${directory}' not found.`);
+    console.error(`\x1b[31mError: Directory '${directory}' not found.\x1b[0m`);
     return results;
   }
 
@@ -37,7 +37,7 @@ export const findFiles = (directory) => {
         }
       }
     } catch (error) {
-      console.error(`Error: A problem occurred while reading the directory: ${error.message}`);
+      console.error(`\x1b[31mError: A problem occurred while reading the directory: ${error.message}\x1b[0m`);
     }
   };
 
