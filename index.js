@@ -39,7 +39,7 @@ if(unusedImages.length > 0){
     console.log('\x1b[34m%s\x1b[0m', `Found \x1b[34m${unusedImages.length}\x1b[0m unused images.`);
     console.log('\x1b[34mUnused images:\x1b[0m');
     unusedImages.forEach((image, index) => {
-        console.log(`\x1b[32m${index + 1}. ${image}\x1b[0m`);
+        console.log(`\x1b[33m${index + 1}. ${image}\x1b[0m`);
     });
 }else{
     console.log("\x1b[31mNo unused images found.\x1b[0m");
