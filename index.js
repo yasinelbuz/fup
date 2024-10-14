@@ -23,7 +23,7 @@ const dir = targetDir || currentDirectory;
 
 // Check if the directory exists
 if (!fs.existsSync(dir)) {
-    console.error(`Error: Directory '${dir}' not found. Please make sure the directory exists.`);
+    console.error(`\x1b[31mError: Directory '${dir}' not found. Please make sure the directory exists.\x1b[0m`);
     process.exit(1);
 }
 
@@ -31,16 +31,16 @@ if (!fs.existsSync(dir)) {
 const images = findImages(dir);
 
 // Print the number of images to the console
-console.log(`A total of \x1b[32m${images.length}\x1b[0m images were found in the '\x1b[36m${currentDirectoryFolderName}\x1b[0m' directory.`);
+console.log(`\x1b[34mA total of ${images.length} images were found in the '${currentDirectoryFolderName}' directory.\x1b[0m`);
 
 const unusedImages = findUnusedImages(currentDirectory);
 
 if(unusedImages.length > 0){
-    console.log('\x1b[33m%s\x1b[0m', `Found \x1b[31m${unusedImages.length}\x1b[0m unused images.`);
-    console.log('Unused images:');
+    console.log('\x1b[34m%s\x1b[0m', `Found \x1b[34m${unusedImages.length}\x1b[0m unused images.`);
+    console.log('\x1b[34mUnused images:\x1b[0m');
     unusedImages.forEach((image, index) => {
         console.log(`\x1b[32m${index + 1}. ${image}\x1b[0m`);
     });
 }else{
-    console.log("No unused images found.");
+    console.log("\x1b[31mNo unused images found.\x1b[0m");
 }
