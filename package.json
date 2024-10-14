@@ -1,6 +1,6 @@
 {
   "name": "handbuz-fup",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "find unused pictures in a directory",
   "main": "index.js",
   "type": "module",
@@ -33,5 +33,13 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.7.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasinelbuz/fup"
+  },
+  "bugs": {
+    "url": "https://github.com/yasinelbuz/fup/issues"
+  },
+  "homepage": "https://github.com/yasinelbuz/fup#readme"
 }

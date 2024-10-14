@@ -30,4 +30,4 @@ npx handbuz-fup public
 Yazar hakkında
 - [Handbuz](https://github.com/yasinelbuz)
 - [Twitter](https://twitter.com/yasinelbuz)
-- [Linkedin](https://www.linkedin.com/in/yasinelbuz/)
+- [Linkedin](https://www.linkedin.com/in/yasin-elb%C3%BCz-314b8b4b/)
