@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import ignoreDirections from "../constants/ignore-direction.js";
+import extensionEnum from "../constants/extension.js";
 
 export const findFiles = (directory) => {
   const results = {
@@ -19,9 +20,10 @@ export const findFiles = (directory) => {
 
       for (const item of items) {
         const fullPath = path.join(dir, item.name);
+        console.log(item.name)
         
-        if (ignoreDirections.includes(item.name)) {
-          continue;
+        if (ignoreDirections.includes(item.name) || item.name === '.next') {
+          continue; // .next klasörünü de göz ardı et
         }
 
         if (item.isDirectory()) {
@@ -30,7 +32,7 @@ export const findFiles = (directory) => {
           results.all.push(fullPath);
           
           const extension = path.extname(item.name).toLowerCase();
-          if (extension === '.ts' || extension === '.js') {
+          if (extensionEnum.includes(extension)) {
             results.tsAndJs.push(fullPath);
           }
         }
