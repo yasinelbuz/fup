@@ -10,7 +10,7 @@ export const findFiles = (directory) => {
   };
 
   if (!fs.existsSync(directory)) {
-    console.error(`Hata: '${directory}' dizini bulunamadı.`);
+    console.error(`Error: Directory '${directory}' not found.`);
     return results;
   }
 
@@ -20,10 +20,9 @@ export const findFiles = (directory) => {
 
       for (const item of items) {
         const fullPath = path.join(dir, item.name);
-        console.log(item.name)
         
         if (ignoreDirections.includes(item.name) || item.name === '.next') {
-          continue; // .next klasörünü de göz ardı et
+          continue; // Also ignore the .next folder
         }
 
         if (item.isDirectory()) {
@@ -38,7 +37,7 @@ export const findFiles = (directory) => {
         }
       }
     } catch (error) {
-      console.error(`Hata: Dizin okunurken bir sorun oluştu: ${error.message}`);
+      console.error(`Error: A problem occurred while reading the directory: ${error.message}`);
     }
   };
 

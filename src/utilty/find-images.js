@@ -6,9 +6,9 @@ import { ignoreDirectionsForImages } from "../constants/ignore-direction.js";
 export const findImages = (directory) => {
   const results = [];
 
-  // Dizinin var olup olmadığını kontrol et
+  // Check if the directory exists
   if (!fs.existsSync(directory)) {
-    console.error(`Hata: '${directory}' dizini bulunamadı.`);
+    console.error(`Error: Directory '${directory}' not found.`);
     return results;
   }
 
@@ -33,7 +33,7 @@ export const findImages = (directory) => {
         }
       }
     } catch (error) {
-      console.error(`Hata: Dizin okunurken bir sorun oluştu: ${error.message}`);
+      console.error(`Error: A problem occurred while reading the directory: ${error.message}`);
     }
   };
 

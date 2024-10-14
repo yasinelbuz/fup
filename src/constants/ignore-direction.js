@@ -1,4 +1,4 @@
-// Resim aramalarında göz ardı edilecek dosya ve klasörler
+// Files and directories to ignore in image searches
 const ignoreDirections = [
     'node_modules',
     '.git',

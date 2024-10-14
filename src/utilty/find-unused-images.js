@@ -9,7 +9,7 @@ export const findUnusedImages = (directory) => {
   
   const usedImages = new Set();
 
-  // Tüm .ts ve .js dosyalarını tara
+  // Scan all .ts and .js files
   tsAndJs.forEach(file => {
     const content = fs.readFileSync(file, 'utf-8');
     images.forEach(image => {
@@ -20,7 +20,7 @@ export const findUnusedImages = (directory) => {
     });
   });
 
-  // Kullanılmayan resimleri bul
+  // Find unused images
   const unusedImages = images.filter(image => !usedImages.has(image));
 
   return unusedImages;
