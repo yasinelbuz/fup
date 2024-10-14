@@ -1,5 +1,5 @@
 {
-  "name": "fup",
+  "name": "handbuz-fup",
   "version": "1.0.0",
   "description": "find unused pictures in a directory",
   "main": "index.js",
