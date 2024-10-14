@@ -1,8 +1,8 @@
 [English](./README.md) | Türkçe
 
-# FUP (Kullanılmayan Resimleri Bul)
+# HANDBUZ-FUP (Kullanılmayan Resimleri Bul)
 
-FUP, geliştiricilerin proje dizinlerindeki kullanılmayan resimleri belirlemelerine ve yönetmelerine yardımcı olmak için tasarlanmış bir komut satırı aracıdır. Bu araç, proje dosyalarınızı tarar ve kod tabanınızda referans verilmeyen resimleri tespit eder, potansiyel olarak karmaşıklığı azaltmaya ve proje boyutunu optimize etmeye yardımcı olur.
+HANDBUZ-FUP, geliştiricilerin proje dizinlerindeki kullanılmayan resimleri belirlemelerine ve yönetmelerine yardımcı olmak için tasarlanmış bir komut satırı aracıdır. Bu araç, proje dosyalarınızı tarar ve kod tabanınızda referans verilmeyen resimleri tespit eder, potansiyel olarak karmaşıklığı azaltmaya ve proje boyutunu optimize etmeye yardımcı olur.
 
 ## Özellikler
 
@@ -27,3 +27,7 @@ npx handbuz-fup
 npx handbuz-fup public
 ```
 
+Yazar hakkında
+- [Handbuz](https://github.com/yasinelbuz)
+- [Twitter](https://twitter.com/yasinelbuz)
+- [Linkedin](https://www.linkedin.com/in/yasinelbuz/)

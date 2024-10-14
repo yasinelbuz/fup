@@ -1,8 +1,8 @@
 English | [Türkçe](./README.tr.md)
 
-# FUP (Find Unused Pictures)
+# HANDBUZ-FUP (Find Unused Pictures)
 
-FUP is a command-line tool designed to help developers identify and manage unused images in their project directories. This tool scans through your project files and detects images that are not referenced in your codebase, potentially helping to reduce clutter and optimize project size.
+HANDBUZ-FUP is a command-line tool designed to help developers identify and manage unused images in their project directories. This tool scans through your project files and detects images that are not referenced in your codebase, potentially helping to reduce clutter and optimize project size.
 
 ## Features
 
@@ -28,6 +28,10 @@ npx handbuz-fup
 npx handbuz-fup public
 ```
 
+About the author
+- [Handbuz](https://github.com/yasinelbuz)
+- [Twitter](https://twitter.com/yasinelbuz)
+- [Linkedin](https://www.linkedin.com/in/yasinelbuz/)
 
 
 
