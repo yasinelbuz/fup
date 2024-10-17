@@ -15,8 +15,11 @@ export const findUnusedImages = (directory) => {
     images.forEach(image => {
       const imageName = path.basename(image);
       const imageNameWithoutExt = path.parse(imageName).name;
-      if (content.includes(imageName) || content.includes(imageNameWithoutExt)) {
+      if (content.includes(imageName)) {
         usedImages.add(image);
+      } else if (content.includes(imageNameWithoutExt)) {
+        usedImages.add(image);
+        console.log(`Şüpheli kullanım: ${image} (sadece isim eşleşmesi)`);
       }
     });
   });
