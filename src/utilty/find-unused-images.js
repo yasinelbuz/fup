@@ -14,7 +14,8 @@ export const findUnusedImages = (directory) => {
     const content = fs.readFileSync(file, 'utf-8');
     images.forEach(image => {
       const imageName = path.basename(image);
-      if (content.includes(imageName)) {
+      const imageNameWithoutExt = path.parse(imageName).name;
+      if (content.includes(imageName) || content.includes(imageNameWithoutExt)) {
         usedImages.add(image);
       }
     });
