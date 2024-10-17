@@ -11,6 +11,7 @@ export const findUnusedImages = (directory) => {
 
   // Scan all .ts and .js files
   tsAndJs.forEach(file => {
+    console.log("file", file);
     const content = fs.readFileSync(file, 'utf-8');
     images.forEach(image => {
       const imageName = path.basename(image);
