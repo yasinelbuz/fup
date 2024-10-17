@@ -6,21 +6,19 @@ import { findFiles } from './find-files.js';
 export const findUnusedImages = (directory) => {
   const images = findImages(directory);
   const { tsAndJs } = findFiles(directory);
+
+  console.log(tsAndJs)
   
   const usedImages = new Set();
 
   // Scan all .ts and .js files
   tsAndJs.forEach(file => {
-    console.log("file", file);
     const content = fs.readFileSync(file, 'utf-8');
+  
     images.forEach(image => {
-      const imageName = path.basename(image);
-      const imageNameWithoutExt = path.parse(imageName).name;
+        const imageName = path.basename(image);
       if (content.includes(imageName)) {
         usedImages.add(image);
-      } else if (content.includes(imageNameWithoutExt)) {
-        usedImages.add(image);
-        console.log(`Şüpheli kullanım: ${image} (sadece isim eşleşmesi)`);
       }
     });
   });
